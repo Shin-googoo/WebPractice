@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+<ul>
+  <li style="font-family: 'Noto Sans KR', sans-serif;">글씨체</li>
+  <li style="font-size: 20px;">글씨 크기</li>
+  <li style="font-weight: bold;">폰트 굵기</li>
+  <li>
+    <strong style="font-weight: normal;">굵은 글씨</strong>
+  </li>
+  <li>
+    <div style="font-family: 'Noto Sans KR', sans-serif; font-weight: 700;">bold</div>
+    <div style="font-family: 'Noto Sans KR', sans-serif; font-weight: 300;">light</div>
+  </li>
+  <li style="text-align: left;">수평정렬 / x축정렬</li>
+  <li>
+    기본 수평정렬이 가운데 정렬인 요소
+      caption,
+      th <br>
+      텍스트 뿐만 아니라 inline, inline-block요소들도 적용됨
+  </li>
+  <li style="text-align: justify;"><!--텍스트 양쪽정렬-->
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa illo, porro enim, reprehenderit aut saepe quibusdam perspiciatis et commodi provident tenetur explicabo ratione recusandae iure aliquid soluta praesentium nihil autem.
+  </li>
+  <li style="vertical-align: middle; height:100px;">
+    텍스트 수직정렬x
+  </li>
+  <li>
+    <input type="radio" style="vertical-align:1px;">
+    <label style="font-size:20px;">텍스트</label>
+  </li>
+  <li>
+    <table style="width:100px; height:100px; border:1px solid red;">
+      <tr>
+        <td style="vertical-align:middle;">텍스트</td>
+      </tr>
+    </table>
+  </li>
+<!--text-align은 inline요소, inline-block요소만 수평정렬한다.-->
+<!--block요소는 수평정렬되지 않는다.-->
+<!--수직정렬인 vertical-align은 사실 수직정렬은 th,td밖에 안되며
+요소와 텍스트,요소와 요소 간의 틀어짐을 보완하기 위해서 많이 쓴다.
+요소간의 틀어짐은 px단위로 조절해 맞춰준다.-->
+  <li style="color:#0b7cc3;"> <!--인덱스컬러 방식-->
+    텍스트 컬러
+  </li>
+  <li style="background-color: blue; color:rgba(255,255,255,1);">
+    1 == 100%
+    0 == 0%
+    0.5 == 50%
+    0.55 == 55%
+    투명도 있는 컬러
+  </li>
+  <li style="text-indent:10px;">
+    들여쓰기 들여쓰기 들여쓰기 들여쓰기 들여쓰기 들여쓰기 들여쓰기 들여쓰기 들여쓰기들여쓰기 들여쓰기들여쓰기 들여쓰기
+  </li>
+  <li style="letter-spacing: 30px;">
+    자간 글자와의 간격
+    <!--포토삽 자간의 1/100의 값을 줘야한다.
+    예를들어 포토삽의 자간이 100이라면 letter-spacing을 1px;줘야된다-->
+  </li>
+  <li style="text-decoration: underline;">
+    텍스트 꾸밈
+  </li>
+  <li>
+    기본 밑줄이 생성되는 요소 <br>
+    a, u, ins
+  </li>
+  <li><a href="" style="text-decoration:none;">밑줄</a></li>
+</ul>
+
+</body>
+</html>
