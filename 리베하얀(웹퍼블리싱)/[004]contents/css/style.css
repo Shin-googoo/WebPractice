@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@font-face {
+  font-family: 'Arita-dotum-Medium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Arita-dotum-Medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
 * {padding: 0; margin: 0;}
 able {width: 100%; border-collapse: collapse; border-spacing: 0;}
@@ -8,6 +14,7 @@ body { padding:30px;}
 legend {display: none;}
 fieldset {border: none;}
 
+/* 표 1 */
 .table_type1 {border-top: 2px solid #12a3cc; font-family: 'Nanum Gothic', sans-serif;
   font-family: 'Noto Sans KR', sans-serif}
 .table_type1 thead tr {border-bottom: 1px solid #b2b2b2;}
@@ -21,7 +28,7 @@ fieldset {border: none;}
 .table_type1 tbody .left img {vertical-align: -3px;}
 
 
-
+/* 표 2 */
 .table_type2 {font-family: 'Nanum Gothic', sans-serif;
   font-family: 'Noto Sans KR', sans-serif}
 .table_type2 thead tr {border-top: 1px solid #000; background-color: #f2f2f2; height: 44px; }
@@ -34,7 +41,16 @@ fieldset {border: none;}
 .table_type2 tbody .text_red {color:#e51837;}
 
 
+/* 표 4 */
+.table_type4 {border-top:1px solid #767676; 
+  border-bottom:1px solid #767676; font-family: 'Noto Sans KR', sans-serif;}
+.table_type4 {width:720px; height:50px; box-sizing:border-box;}
+.table_type4 tbody tr th {padding:15px 20px; border-bottom:1px solid #eee; background:#f6f6f6; font-size:13px; text-align:left; line-height:50px;box-sizing:border-box;}
+.table_type4 tbody tr td {padding:0 0 0 12px; border-bottom:1px solid #eee; box-sizing:border-box;}
+.table_type4 tbody tr td img {vertical-align:-2px;}
+.table_type4 .border_bottom {border-bottom:1px solid #767676;}
 
+/* 표 5 */
 .table_type5 { border-top: 2px solid #333; font-family: 'Nanum Gothic', sans-serif;
   font-family: 'Noto Sans KR', sans-serif}
 .table_type5 thead tr {background-color: #f8f8f8; border-bottom: 1px solid #c7c7c7;}
@@ -45,7 +61,16 @@ fieldset {border: none;}
 .table_type5 tbody td {padding: 20px 0; font-size: 16px; color:#333; font-weight:400; text-align: center; line-height: 24px;}
 
 
+/* 표 6 */
+.table_type6 {width:1000px; height:622px; border-top:2px solid #000; border-bottom:2px solid #000; box-sizing: border-box; font-family: 'Nanum Gothic', sans-serif;
+line-height:1;}
+.table_type6 tbody td {border-left:1px solid #000;}
+.table_type6 tbody th {border-bottom:1px solid #ccc; padding:0 0 0 21px; background:#ededed; font-size:15px; text-align:left; line-height:25px;}
+.table_type6 tbody td {padding:20px 0 20px 20px; border-bottom:1px solid #ccc; font-size:15px; line-height:25px;}
+.table_type6 tbody th img {padding:0 3px 0; vertical-align:middle;}
+.table_type6 tbody td img {padding:0 4px 0; vertical-align:middle;}
 
+/* 표 9 */
 .table_type9 {font-family: 'Nanum Gothic', sans-serif;
   font-family: 'Noto Sans KR', sans-serif}
 .table_type9 thead tr {border-top: 2px solid #393d46;
@@ -56,7 +81,7 @@ font-weight:500; height: 57px;}
 .table_type9 tbody tr {border-bottom:1px solid #acb0b6;}
 .table_type9 tbody tr td {padding: 15px 0 15px 19px; border-left:1px solid #acb0b6; height: 29px;}
 .table_type9 tbody tr td b {height: 32px;}
-
+.table_type9 tbody .link_btn {display:inline-block; width:102px; height:23px; border:1px solid #000; text-decoration:none;}
 
 
 /* 표 11 */
@@ -68,6 +93,7 @@ font-weight:500; height: 57px;}
 .table_type11 tbody .text_center {text-align:center;}
 .table_type11 tbody td b {padding:0 5px 0 0; font-size:17px; font-weight:800; color:#333;}
 .table_type11 tbody td span {padding: 0 65px 0 0;}
+
 
 
 /* 리스트 1 */
@@ -91,6 +117,25 @@ font-weight:500; height: 57px;}
 .list_type4 li {border: 1px solid #a4b9e3; height: 75px; border-radius: 1%; text-align:center;  }
 .list_type4 li .block4_1 {display: block; width:50%;}
 
+
+/* 리스트 5 */
+.list_type5 {padding:35px; width: 670px; background:#e4e6e7; box-sizing:border-box; font-family: 'Noto Sans KR', sans-serif; line-height:1;}
+.list_type5 h2 {padding:0 0 18px; font-size:18px; color:#3f3f3f;}
+.list_type5 .box {overflow:auto; padding:0 40px 0 30px; height:650px; background:#fff; border-top:20px solid #fff; border-bottom:40px solid #fff; 
+  counter-reset:num1;}
+.list_type5 .box h3 {padding:32px 0 22px; font-size:17px; color:#3f3f3f; font-weight:normal;}
+.list_type5 .box h3:before { content:counter(num1) ". "; counter-increment:num1 1;}
+.list_type5 .box ol {padding:0 0 0 13px; counter-reset:num2;line-height:20px; }
+.list_type5 .box ol li:before {content:counter(num2) ". "; counter-increment:num2 1;}
+.list_type5 .box ol li { font-size:13px; color:#3f3f3f;}
+.list_type5 .box ul {padding:21px 0 0 13px; font-size:13px; color:#3f3f3f; line-height:20px;}
+.list_type5 .box ul li:before {content:"* ";}
+.list_type5 .box p {padding:7px 0 20px 13px; font-size:13px; color:#3f3f3f;}
+.list_type5 .box .txt {padding:10px 0 0 0; margin:0 0 -2px;}
+.list_type5 .box ul li ol {padding:5px 0 19px 0; counter-reset:num3;}
+.list_type5 .box ul li ol li:before {content:counter(num3) ". "; counter-increment:num3 1;}
+.list_type5 button {width:130px; height:38px; background:#1d63b4; color:#fff; font-size:15px; border-radius:2px; border:none; }
+.list_type5 .btn_group {text-align: center; padding:20px 0 0;}
 
 /* 리스트 7 */
 .list_type7 {width:1000px; font-family: 'Noto Sans KR', sans-serif;}
@@ -126,6 +171,39 @@ font-weight:500; height: 57px;}
 .list_type9 li img {position: absolute; top:30px; left:0;}
 .list_type9 li a {position:absolute; top:40px; right:40px;
 width:176px; height:40px; border: 1px solid #005891; text-decoration: none; text-align: center; line-height:38px; box-sizing:border-box; font-size:15px; color:#005891; font-weight:700;} 
+
+
+/* 리스트 10 */
+.list_type10 {width: 1312px; text-align:center; font-family: 'Arita-dotum-Medium'; line-height:1;}
+.list_type10 h3 {font-size:35px; color:#999;}
+.list_type10 h3 span {color:#000;}
+.list_type10 .txt {padding:56px 0 18px; font-size:16px; color:#999;}
+.list_type10 nav {padding:0 0 55px; text-align:center;}
+.list_type10 nav li {display:inline-block; font-size:15px; color:#e6e6e6; font-weight:bold; }
+.list_type10 nav li a {margin:0 20px; color:#3c2e30; text-decoration:none; font-weight:normal;}
+.list_type10 .product_list {clear:both; }
+.list_type10 .product_list:after {content:""; display:block; clear:both;}
+.list_type10 .product_list li {float:left; padding: 0 33px 0 0; width:295px; height:413x;}
+.list_type10 .product_list a {display:block; position:relative; text-decoration: none;}
+.list_type10 .tit {padding:23px 0 20px; font-size:16px; color: #3c2e30; }
+.list_type10 .product_list .price {color:#e6e6e6; font-size:21px;}
+.list_type10 .product_list b {color:#333; font-size:21px;}
+.list_type10 .product_list del {font-size:15px; color:#3e3839; vertical-align:2px;}
+.list_type10 .product_list div {position:absolute; left: 10px; top: 10px; padding:14px 0 0; width:54px; height:54px; border-radius:100%; background:#fcfbfb; color:#676767; box-sizing:border-box;}
+
+
+/* 리스트 15 */
+.list_type15 {width:1000px; font-family: 'Noto Sans KR', sans-serif;}
+.list_type15 h3 {float:left; padding: 0 0 22px 22px; font-size:25px; color:#121314; font-weight:normal;}
+.list_type15 .btn_board {display:inline-block; border: 1px solid #777; width:120px; height:31px; text-decoration:none; color:#121314; font-size: 16px; text-align:center; line-height:31px;}
+.list_type15 .btn_group {float:right;}
+.list_type15 .faq_list { border-top:2px solid #000; clear:both;}
+.list_type15 .faq_list li {border-bottom: 1px solid #ccc;}
+.list_type15 .faq_list li a {display:block; padding:0 0 0 19px; background:url(../img/btn_down.png) no-repeat right 21px center; line-height:52px; font-size:15px; color:#000; text-decoration:none;}
+.list_type15 .faq_list li img {padding: 0 22px 0 0; vertical-align:middle;}
+.list_type15 .faq_list div {position:relative; padding:15px 15px 15px 76px; background:#e7e7e7; line-height: 22px; color:#555; font-size:16px;}
+.list_type15 .faq_list div .answer {position:absolute; left:20px; top:34px;}
+
 
 
 /* 폼 1 */
